@@ -1,6 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config();
-
 const messageForm = document.querySelector(".prompt__form");
 const chatHistoryContainer = document.querySelector(".chats");
 const suggestionItems = document.querySelectorAll(".suggests__item");
@@ -12,10 +9,9 @@ const clearChatButton = document.getElementById("deleteButton");
 let currentUserMessage = null;
 let isGeneratingResponse = false;
 
-// const GOOGLE_API_KEY = "AIzaSyBkmiuWhe1GyNRLs1yNKPGIaiyJcuQX604";
+const GOOGLE_API_KEY = "AIzaSyBkmiuWhe1GyNRLs1yNKPGIaiyJcuQX604";
 // const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${GOOGLE_API_KEY}`;
-// const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${Process.GOOGLE_API_KEY}`
-const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GOOGLE_API_KEY}`;
+const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GOOGLE_API_KEY}`
 
 // Load saved data from local storage
 const loadSavedChatHistory = () => {
