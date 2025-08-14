@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- FIXED: Correct folder + file name + extension -->
+    <link rel="stylesheet" href="css/personalspace.css">
+    <title>Personal Space - Vortexus</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__left">
+            <h1 class="navbar__logo">Vortexus</h1>
+        </div>
+        <div class="navbar__right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="chatbot.html" class="nav-link">Chat</a>
+            <a href="account.html" class="nav-link">Account</a>
+            <button class="theme-toggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar__profile">
+                <!-- FIXED: Correct assets folder path -->
+                <img src="assets/profile.png" alt="Profile" class="profile-img">
+                <div class="profile-info">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <span>Stanford University</span>
+                </div>
+            </div>
+            <nav class="sidebar__nav">
+                <a href="#" class="nav-item active">
+                    <i class='bx bx-folder'></i>
+                    <span>My Papers</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bx-bookmark'></i>
+                    <span>Saved Papers</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bx-note'></i>
+                    <span>My Notes</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bx-line-chart'></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bx-share-alt'></i>
+                    <span>Shared</span>
+                </a>
+            </nav>
+            <div class="storage-info">
+                <div class="storage-text">
+                    <span>Storage Used</span>
+                    <span>65%</span>
+                </div>
+                <div class="storage-bar">
+                    <div class="storage-fill" style="width: 65%"></div>
+                </div>
+                <span class="storage-details">6.5 GB of 10 GB used</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h1>My Research Papers</h1>
+                <button class="upload-btn">
+                    <i class='bx bx-upload'></i>
+                    Upload Paper
+                </button>
+            </div>
+
+            <div class="search-bar">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search papers...">
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Sort by:</label>
+                    <select>
+                        <option>Date Added</option>
+                        <option>Title</option>
+                        <option>Citations</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Filter by:</label>
+                    <select>
+                        <option>All Papers</option>
+                        <option>Published</option>
+                        <option>Drafts</option>
+                        <option>Archived</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="papers-grid">
+                <!-- Paper Card 1 -->
+                <div class="paper-card">
+                    <div class="paper-icon">
+                        <i class='bx bx-file-pdf'></i>
+                    </div>
+                    <div class="paper-info">
+                        <h3>Quantum Computing Applications in Machine Learning</h3>
+                        <p>Last modified: 2 days ago</p>
+                        <div class="paper-meta">
+                            <span><i class='bx bx-download'></i> 156</span>
+                            <span><i class='bx bx-link'></i> 23</span>
+                        </div>
+                    </div>
+                    <div class="paper-actions">
+                        <button class="action-btn"><i class='bx bx-download'></i></button>
+                        <button class="action-btn"><i class='bx bx-share'></i></button>
+                        <button class="action-btn"><i class='bx bx-dots-vertical-rounded'></i></button>
+                    </div>
+                </div>
+
+                <!-- Paper Card 2 -->
+                <div class="paper-card">
+                    <div class="paper-icon">
+                        <i class='bx bx-file-doc'></i>
+                    </div>
+                    <div class="paper-info">
+                        <h3>Neural Networks in Medical Diagnosis</h3>
+                        <p>Last modified: 1 week ago</p>
+                        <div class="paper-meta">
+                            <span><i class='bx bx-download'></i> 89</span>
+                            <span><i class='bx bx-link'></i> 12</span>
+                        </div>
+                    </div>
+                    <div class="paper-actions">
+                        <button class="action-btn"><i class='bx bx-download'></i></button>
+                        <button class="action-btn"><i class='bx bx-share'></i></button>
+                        <button class="action-btn"><i class='bx bx-dots-vertical-rounded'></i></button>
+                    </div>
+                </div>
+
+                <!-- Paper Card 3 -->
+                <div class="paper-card">
+                    <div class="paper-icon">
+                        <i class='bx bx-file-pdf'></i>
+                    </div>
+                    <div class="paper-info">
+                        <h3>Blockchain Technology in Healthcare</h3>
+                        <p>Last modified: 2 weeks ago</p>
+                        <div class="paper-meta">
+                            <span><i class='bx bx-download'></i> 234</span>
+                            <span><i class='bx bx-link'></i> 45</span>
+                        </div>
+                    </div>
+                    <div class="paper-actions">
+                        <button class="action-btn"><i class='bx bx-download'></i></button>
+                        <button class="action-btn"><i class='bx bx-share'></i></button>
+                        <button class="action-btn"><i class='bx bx-dots-vertical-rounded'></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

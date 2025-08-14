@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css">
+    <title>Vortexus - AI-Powered Research Assistant</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__left">
+            <h1 class="navbar__logo">Vortexus</h1>
+        </div>
+        <div class="navbar__right">
+            <a href="auth.html" class="nav-btn" id="loginBtn">Log In</a>
+            <div class="profile-section" id="profileSection" style="display: none;">
+                <button class="profile-btn" id="profileBtn">
+                    <img src="assets/profile.png" alt="Profile" class="profile-img">
+                </button>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <a href="personalspace.html"><i class='bx bx-user'></i> My Profile</a>
+                    <a href="account.html"><i class='bx bx-cog'></i> Settings</a>
+                    <a href="#" id="logoutBtn"><i class='bx bx-log-out'></i> Logout</a>
+                </div>
+            </div>
+            <button class="navbar__button" id="themeToggler"><i class='bx bx-sun'></i></button>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1>Transform Your Research with AI</h1>
+                <p>Your intelligent research companion that helps you analyze papers, generate insights, and collaborate with researchers worldwide.</p>
+                <div class="hero__cta">
+                    <a href="auth.html" class="cta-btn primary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="visual-container">
+                    <div class="visual-element"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="features">
+        <h2>Why Choose Vortexus?</h2>
+        <div class="features__grid">
+            <a href="research.html" class="feature-card">
+                <i class='bx bx-brain'></i>
+                <h3>Research Paper Analysis</h3>
+                <p>Advanced algorithms analyze research papers and extract key insights automatically.</p>
+            </a>
+            <a href="chatbot.html" class="feature-card">
+                <i class='bx bx-network-chart'></i>
+                <h3>Chat with AI</h3>
+                <p>Chat with AI to get answers to your questions.</p>
+            </a>
+            <a href="personalspace.html" class="feature-card">
+                <i class='bx bx-line-chart'></i>
+                <h3>Personal Space</h3>
+                <p>Store your research papers and notes in your personal space.</p>
+            </a>
+            <a href="account.html" class="feature-card">
+                <i class='bx bx-book-reader'></i>
+                <h3>Account</h3>
+                <p>Manage your account and settings.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Researchers Say</h2>
+        <div class="testimonials__grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"Vortexus has revolutionized how I conduct my research. The AI insights are incredibly accurate."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="assets/profile.png" alt="Dr. Sarah Johnson">
+                    <div>
+                        <h4>Dr. Sarah Johnson</h4>
+                        <span>Stanford University</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The collaboration features have made it so much easier to work with international research teams."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="assets/profile.png" alt="Prof. Michael Chen">
+                    <div>
+                        <h4>Prof. Michael Chen</h4>
+                        <span>MIT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Research?</h2>
+            <p>Join thousands of researchers who are already using Vortexus</p>
+            <a href="auth.html" class="cta-btn primary">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__bottom">
+            <p>&copy; 2025 Vortexus. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/landing.js"></script>
+</body>
+</html>

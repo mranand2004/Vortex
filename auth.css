@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #64748b;
+    --accent-color: #3b82f6;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --border-color: #e2e8f0;
+    --error-color: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem;
+}
+
+.auth-box {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.auth-header p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background: none;
+    color: var(--text-light);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.input-group i {
+    color: var(--text-light);
+    margin-right: 0.5rem;
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.remember-me label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--primary-dark);
+}
+
+.social-login {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-login p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background: var(--white);
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-btn:hover {
+    background: var(--background-color);
+}
+
+.social-btn i {
+    font-size: 1.25rem;
+}
+
+.social-btn.google i {
+    color: #ea4335;
+}
+
+.social-btn.github i {
+    color: #333;
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 1rem;
+    }
+
+    .auth-box {
+        padding: 1.5rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+} 

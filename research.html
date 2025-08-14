@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/research.css">
+    <title>Research Hub</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__left">
+            <h1 class="navbar__logo">Vortexus</h1>
+        </div>
+        <div class="navbar__search">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search research papers...">
+        </div>
+        <div class="navbar__right">
+            <i class='bx bx-home-alt'></i>
+            <i class='bx bx-book-reader'></i>
+            <i class='bx bx-plus-square'></i>
+            <i class='bx bx-bell'></i>
+            <img src="assets/profile.png" alt="Profile" class="navbar__profile">
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="main__content">
+            <!-- Research Paper Posts -->
+            <div class="posts">
+                <!-- Post 1 -->
+                <article class="post">
+                    <div class="post__header">
+                        <div class="post__author">
+                            <img src="assets/profile.png" alt="Author" class="post__author-img">
+                            <div class="post__author-info">
+                                <h3>Dr. Sarah Johnson</h3>
+                                <span>Stanford University</span>
+                            </div>
+                        </div>
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                    <div class="post__content">
+                        <img src="https://picsum.photos/600/600" alt="Research visualization" class="post__image">
+                        <div class="post__actions">
+                            <div class="post__actions-left">
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-message-square-detail'></i>
+                                <i class='bx bx-share'></i>
+                            </div>
+                            <i class='bx bx-bookmark'></i>
+                        </div>
+                        <div class="post__likes">1,234 citations</div>
+                        <div class="post__caption">
+                            <strong>Dr. Sarah Johnson</strong> 
+                            <span>New findings on quantum computing applications in machine learning. Full paper available in the link below.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post">
+                    <div class="post__header">
+                        <div class="post__author">
+                            <img src="assets/profile.png" alt="Author" class="post__author-img">
+                            <div class="post__author-info">
+                                <h3>Prof. Michael Chen</h3>
+                                <span>MIT</span>
+                            </div>
+                        </div>
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                    <div class="post__content">
+                        <img src="https://picsum.photos/600/600" alt="Research visualization" class="post__image">
+                        <div class="post__actions">
+                            <div class="post__actions-left">
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-message-square-detail'></i>
+                                <i class='bx bx-share'></i>
+                            </div>
+                            <i class='bx bx-bookmark'></i>
+                        </div>
+                        <div class="post__likes">856 citations</div>
+                        <div class="post__caption">
+                            <strong>Prof. Michael Chen</strong> 
+                            <span>Breakthrough in sustainable energy storage systems. Read our latest research paper.</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar__profile">
+                    <img src="assets/profile.png" alt="Your profile" class="sidebar__profile-img">
+                    <div class="sidebar__profile-info">
+                        <h3>Your Name</h3>
+                        <span>Research Fellow</span>
+                    </div>
+                </div>
+                <div class="sidebar__suggestions">
+                    <div class="suggestions__header">
+                        <h3>Suggested Researchers</h3>
+                        <a href="#">See All</a>
+                    </div>
+                    <div class="suggestions__list">
+                        <div class="suggestion">
+                            <img src="assets/profile.png" alt="Suggested researcher">
+                            <div class="suggestion__info">
+                                <h4>Dr. Emily Brown</h4>
+                                <span>Neuroscience</span>
+                            </div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="suggestion">
+                            <img src="assets/profile.png" alt="Suggested researcher">
+                            <div class="suggestion__info">
+                                <h4>Prof. David Lee</h4>
+                                <span>AI & Robotics</span>
+                            </div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html> 

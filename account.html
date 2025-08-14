@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/account.css">
+    <title>Account Settings - Vortexus</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__left">
+            <h1 class="navbar__logo">Vortexus</h1>
+        </div>
+        <div class="navbar__right">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="chatbot.html" class="nav-link">Chat</a>
+            <a href="personalspace.html" class="nav-link">Personal Space</a>
+            <button class="theme-toggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar__profile">
+                <img src="assets/profile.png" alt="Profile" class="profile-img">
+                <div class="profile-info">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <span>Stanford University</span>
+                </div>
+            </div>
+            <nav class="sidebar__nav">
+                <a href="#profile" class="nav-item active">
+                    <i class='bx bx-user'></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#security" class="nav-item">
+                    <i class='bx bx-lock-alt'></i>
+                    <span>Security</span>
+                </a>
+                <a href="#notifications" class="nav-item">
+                    <i class='bx bx-bell'></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="#preferences" class="nav-item">
+                    <i class='bx bx-cog'></i>
+                    <span>Preferences</span>
+                </a>
+                <!--<a href="#billing" class="nav-item">
+                    <i class='bx bx-credit-card'></i>
+                    <span>Billing</span>
+                </a>-->
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section id="profile" class="settings-section">
+                <div class="section-header">
+                    <h2>Profile Settings</h2>
+                    <button class="save-btn">Save Changes</button>
+                </div>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Profile Picture</label>
+                        <div class="profile-upload">
+                            <img src="assets/profile.png" alt="Profile" class="upload-preview">
+                            <button class="upload-btn">
+                                <i class='bx bx-upload'></i>
+                                Change Photo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" value="Dr. Sarah Johnson">
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" value="Associate Professor">
+                    </div>
+                    <div class="form-group">
+                        <label>Institution</label>
+                        <input type="text" value="Stanford University">
+                    </div>
+                    <div class="form-group">
+                        <label>Department</label>
+                        <input type="text" value="Computer Science">
+                    </div>
+                    <div class="form-group">
+                        <label>Bio</label>
+                        <textarea rows="4">Research interests in quantum computing and machine learning. Currently working on applications of quantum algorithms in neural networks.</textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Section -->
+            <section id="security" class="settings-section">
+                <div class="section-header">
+                    <h2>Security Settings</h2>
+                    <button class="save-btn">Update Security</button>
+                </div>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Current Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm New Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Two-Factor Authentication</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="2fa">
+                            <label for="2fa"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications Section -->
+            <section id="notifications" class="settings-section">
+                <div class="section-header">
+                    <h2>Notification Preferences</h2>
+                    <button class="save-btn">Save Preferences</button>
+                </div>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Email Notifications</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="email-notifications" checked>
+                            <label for="email-notifications"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Paper Citations</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="citations" checked>
+                            <label for="citations"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Research Updates</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="research-updates">
+                            <label for="research-updates"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Collaboration Requests</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="collaboration" checked>
+                            <label for="collaboration"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preferences Section -->
+            <section id="preferences" class="settings-section">
+                <div class="section-header">
+                    <h2>Account Preferences</h2>
+                    <button class="save-btn">Save Preferences</button>
+                </div>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Language</label>
+                        <select>
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                            <option>German</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Time Zone</label>
+                        <select>
+                            <option>Pacific Time (PT)</option>
+                            <option>Mountain Time (MT)</option>
+                            <option>Central Time (CT)</option>
+                            <option>Eastern Time (ET)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Paper Display Format</label>
+                        <select>
+                            <option>Grid View</option>
+                            <option>List View</option>
+                            <option>Compact View</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Default Citation Style</label>
+                        <select>
+                            <option>APA</option>
+                            <option>MLA</option>
+                            <option>Chicago</option>
+                            <option>IEEE</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Billing Section 
+            <section id="billing" class="settings-section">
+                <div class="section-header">
+                    <h2>Billing Information</h2>
+                    <button class="save-btn">Update Billing</button>
+                </div>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label>Current Plan</label>
+                        <div class="plan-info">
+                            <span>Professional Plan</span>
+                            <span class="plan-price">$29.99/month</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-method">
+                            <i class='bx bx-credit-card'></i>
+                            <span>•••• •••• •••• 4242</span>
+                            <button class="change-btn">Change</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Billing History</label>
+                        <div class="billing-history">
+                            <div class="billing-item">
+                                <span>March 2024</span>
+                                <span>$29.99</span>
+                                <span class="status paid">Paid</span>
+                            </div>
+                            <div class="billing-item">
+                                <span>February 2024</span>
+                                <span>$29.99</span>
+                                <span class="status paid">Paid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+        </main>
+    </div>
+    <script src="/js/account.js"></script>
+</body>
+</html> 

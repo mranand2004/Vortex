@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/auth.css">
+    <title>Login - Vortexus</title>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h1>Welcome to Vortexus</h1>
+                <p>Sign in to continue to your research journey</p>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="tab-button active" data-tab="login">Login</button>
+                <button class="tab-button" data-tab="signup">Sign Up</button>
+            </div>
+
+            <div id="login" class="tab-content active">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <div class="input-group">
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" id="login-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <div class="input-group">
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" id="login-password" required>
+                            <button type="button" class="toggle-password">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group remember-me">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+            </div>
+
+            <div id="signup" class="tab-content">
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <div class="input-group">
+                            <i class='bx bx-user'></i>
+                            <input type="text" id="signup-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <div class="input-group">
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" id="signup-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <div class="input-group">
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" id="signup-password" required>
+                            <button type="button" class="toggle-password">
+                                <i class='bx bx-show'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-institution">Institution</label>
+                        <div class="input-group">
+                            <i class='bx bx-building'></i>
+                            <input type="text" id="signup-institution" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-field">Research Field</label>
+                        <div class="input-group">
+                            <i class='bx bx-book'></i>
+                            <input type="text" id="signup-field" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google">
+                        <i class='bx bxl-google'></i>
+                        Google
+                    </button>
+                    <button class="social-btn github">
+                        <i class='bx bxl-github'></i>
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/auth.js"></script>
+</body>
+</html> 
